@@ -1,0 +1,151 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-10">
+  <meta name="viewport" content="width=device-width, initial-scale=0.0">
+<title>
+sample
+</title>
+<style>
+ body {
+    background-color: #0c1226;
+    color: #b9b9bf;
+    font-family: IBM Plex Mono,monospace;
+font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+button {
+            background-color:#0f1249;
+            color:white;
+            font-size: 20px;
+            border:2px solid #00CCCC;
+            
+           
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+}
+ button:hover {
+            background-color: #2980b9;
+            color: #fff;
+}
+ ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c1226;
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+         
+background-color:#00CCCC; /* Change this color as needed */
+        }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+   #countdown {
+      font-size: 2em;
+      color: #ff4500;
+    }
+       .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+<script>
+#hello
+{
+height:400px;
+width:400px;
+border:2px solid green;
+}
+</script>
+
+ 
+</style>
+</head>
+<body>
+
+<img src="/storage/emulated/O/Download/ 1586421714apcklogo.jpg" style="border-radius:20px; margin-left:10px;" height="100" size=30px>
+<img src="C:\Users\mvenk\OneDrive\Pictures\Screenshots\Screenshot (7).png" align="center" style="margin-left:300px;margin-top:0px;">
+ <img src="C:\Users\mvenk\OneDrive\Desktop\sailogo.jpg" style="border-radius:20px; margin-right:10px;" height="100"  align="right">
+<h3  align="center">STATE BOARD OF TECHNICAL EDUCATION</h3>
+<hr>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#speakers">Events</a></li>
+    <li><a href="#registration">Registration</a></li>
+    <li><a href="#venue">Venue</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- Add more menu items as needed -->
+</ul>
+<hr>
+</br>
+</br>
+<fieldset border:20px>
+<legend>
+<h3 style="color:#00CCCC;font-size:25px;margin-left:35px;"><b>ABOUT SCIENCE DAY CARNIVAL</b></h3>
+</legend>
+<p style="margin-left:40;">A Science Day Carnival is an event that celebrates and promotes science through interactive exhibits, demonstrations, and activities. It often aims to make science engaging and accessible to people of all ages, fostering a love for learning and discovery. Participants may explore various scientific fields through hands-on experiments, workshops, and educational displays.</p>
+<p style="margin-left:40px;">A science exhibition is an organized display of scientific projects, experiments, and innovations. It provides a platform for students, researchers, and enthusiasts to showcase their work and share scientific knowledge with the public. Science exhibitions often cover a diverse range of topics, including physics, chemistry, biology, technology, and environmental science. These events aim to stimulate curiosity, promote scientific awareness, and inspire interest in the wonders of science.</p>
+</fieldset>
+</br>
+</br>
+<div class="container">
+    <h1>Science Carnival</h1>
+  <fieldset>
+    <div id="countdown"></div>
+  </fieldset>
+  </div>
+
+  <script>
+        const countDownDate = new Date("February 28, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("countdown").innerHTML = ${days}d ${hours}h ${minutes}m ${seconds}s;
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "The Science Carnival is happening now!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
